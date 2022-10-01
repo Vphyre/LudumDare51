@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public string startingScene;
+    public string startingScene = "Test";
+    public string credits = "Credits";
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,11 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(startingScene);
+    }
+
+    public void ShowCredits()
+    {
+        SceneManager.LoadScene(credits);
     }
 
     public void QuitGame()

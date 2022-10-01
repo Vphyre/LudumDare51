@@ -1,0 +1,8 @@
+.vs
+Library
+Temp
+*.apk
+*.csproj
+LudumDare51.sln
+/build
+/.vscode

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float timeToChangeGame;
     public float TimeToChangeGame { get => timeToChangeGame; }
     private float originalTime;
+    public float OriginalTime { get => originalTime; }
     public delegate void OnEvent();
     public static OnEvent onChangeTime;
     private void Awake()

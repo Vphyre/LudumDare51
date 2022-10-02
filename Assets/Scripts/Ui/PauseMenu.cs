@@ -8,6 +8,11 @@ public class PauseMenu : MonoBehaviour
     public string mainMenuName = "MainMenu";
 
     // Start is called before the first frame update
+    void Start()
+    {
+        this.gameObject.SetActive(false);
+    }
+
     void OnEnable()
     {
         Time.timeScale = 0f;

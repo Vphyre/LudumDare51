@@ -1194,7 +1194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8788923933016810436, guid: caed55b43a9747042b28181b354103cc, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8788923933016810436, guid: caed55b43a9747042b28181b354103cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2049,6 +2049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 4036963064108193274, guid: f351e90ac5169ed408ceaf981fbd9890, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4036963064108193278, guid: f351e90ac5169ed408ceaf981fbd9890, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2267,7 +2271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1691865684676046518, guid: 915bcadde3a68364a8463e13d9fae7da, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1691865684676046518, guid: 915bcadde3a68364a8463e13d9fae7da, type: 3}
       propertyPath: m_LocalPosition.x

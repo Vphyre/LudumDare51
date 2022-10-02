@@ -52,6 +52,17 @@ public class ColorController : MonoBehaviour
             _color = _color + 1;
         }
     }
+    public void ChangeColorNormal()
+    {
+        if (_color + 1 == ColorEnum.End)
+        {
+            _color = ColorEnum.Red;
+        }
+        else
+        {
+            _color = _color + 1;
+        }
+    }
     public void SetColor(Color currentColor)
     {
         if (currentColor == Color.red)

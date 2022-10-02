@@ -60,6 +60,7 @@ public class PrismController : MonoBehaviour
         }
 
         indexTranform++;
+        
         if (indexTranform == prismPosition.Count)
         {
             indexTranform = 0;

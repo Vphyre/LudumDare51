@@ -7,12 +7,16 @@ public class LightMove : MonoBehaviour
     [SerializeField] private float lightSpeed;
     [SerializeField] private Transform[] point;
     [SerializeField] private Transform destination;
+    public Transform Destination { get => destination; set => destination = value; }
     [SerializeField] private LightBeamController line;
-    private void Start()
+    public LightBeamController LightBeamController { get => line; }
+    public void MoveStart()
     {
+        gameObject.GetComponent<CircleCollider2D>().enabled = true;
         line.SetUpLine(point);
+        InvokeRepeating("Movement", 0f, 0.01f);
     }
-    private void Update()
+    private void Movement()
     {
         float step = lightSpeed * Time.deltaTime;
 

@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ColorEnum : uint
+public enum ColorEnum 
 {
-    Red = 0xFF0000,
-    Yellow = 0xFFFF00,
-    Blue = 0x0000FF,
+    None = 0,
 
-    Purple,
-    Orange,
-    Green,
+    Red = 1,
+    Yellow = 2,
+    Blue = 3,
+
+    Purple = 4,
+    Orange = 5,
+    Green = 6,
+
+    End = 7,
     
 }

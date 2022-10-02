@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static GameManager instance;
+    [SerializeField] private float timeToChangeGame;
+    public float TimeToChangeGame { get => timeToChangeGame; }
+    private float originalTime;
+    public delegate void OnEvent();
+    public static OnEvent onChangeTime;
+    private void Awake()
     {
-        
+        instance = this;
+        originalTime = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        originalTime += Time.deltaTime;
+        if (originalTime >= timeToChangeGame)
+        {
+            originalTime = 0;
+            Debug.Log("Restou cores");
+            onChangeTime?.Invoke();
+        }
     }
 }

@@ -6,11 +6,17 @@ public class LightBeamController : MonoBehaviour
 {
     private LineRenderer lineRenderer;
     private Transform[] lightPoints;
-    
+    private ColorController currentColor;
+    public ColorController CurrentColor { get => currentColor; set => currentColor = value; }
+    [SerializeField] private LightMove lightMove;
+    public LightMove LightMove { get => lightMove; set => lightMove = value; }
 
-    private void Awake()
+    private void OnEnable()
     {
-        lineRenderer = GetComponent<LineRenderer>();        
+        lineRenderer = GetComponent<LineRenderer>();
+        currentColor = GetComponent<ColorController>();
+        UpdateColor();
+        lightMove.MoveStart();
     }
     public void SetUpLine(Transform[] points)
     {
@@ -23,5 +29,10 @@ public class LightBeamController : MonoBehaviour
         {
             lineRenderer.SetPosition(i, lightPoints[i].position);
         }
+    }
+    public void UpdateColor()
+    {
+        lineRenderer.startColor = currentColor.GetColor();
+        lineRenderer.endColor = currentColor.GetColor();
     }
 }

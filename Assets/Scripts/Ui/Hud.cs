@@ -22,7 +22,6 @@ public class Hud : MonoBehaviour
         // txtTimeToChange = GameObject.Find("txtTimeToChange").GetComponent<Text>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         timeToChange = (int) (gameManager.TimeToChangeGame - gameManager.OriginalTime);

@@ -15,9 +15,17 @@ MonoBehaviour:
   listCharacterNames:
   - Nemesis
   - Lys
+  - Lys
+  - Lys
   listDialogTexts:
   - The time is coming...
   - ..?
+  - You'll see the time coming, when I turn your life into a hell of mirrors and
+    prisms!
+  - ... it reminded me of a certain baby demon, that my sister had to take care of,
+    working as a sitter... (LD 49)
   listCharacterImgs:
   - {fileID: 21300000, guid: 388c6c6154d09ed4a938a1c3c9f2cff0, type: 3}
   - {fileID: 21300000, guid: bc5f25b3127411540a05d1bad1acaa5c, type: 3}
+  - {fileID: 21300000, guid: 4adbf1c0d38d97645b240b13f558bdc4, type: 3}
+  - {fileID: 21300000, guid: 2263e2dcc0ceb3e428648ef875c460b2, type: 3}

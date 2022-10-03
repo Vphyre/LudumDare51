@@ -8,14 +8,20 @@ public class TimeChanger : MonoBehaviour
     private void OnEnable()
     {
         GameManager.onChangeTime += ChangeColor;
+        GameManager.onGameStopped += StopGame;
     }
     private void OnDisable()
     {
         GameManager.onChangeTime -= ChangeColor;
+        GameManager.onGameStopped -= StopGame;
     }
     private void ChangeColor()
     {
         lightBeamController.CurrentColor.ChangeColorOnPrism();
         lightBeamController.UpdateColor();
+    }
+    private void StopGame()
+    {
+        lightBeamController.transform.parent.gameObject.SetActive(false);
     }
 }

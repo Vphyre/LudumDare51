@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7200e4c58bb921f4d9c27483588e2c31, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  currentStage: 10
+  currentStage: 2

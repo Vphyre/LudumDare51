@@ -17,6 +17,7 @@ public class Hud : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
+
         // txtTimeLeft = GameObject.Find("txtTimeLeft").GetComponent<Text>();
         // txtTimeToChange = GameObject.Find("txtTimeToChange").GetComponent<Text>();
     }
@@ -27,13 +28,18 @@ public class Hud : MonoBehaviour
         timeToChange = (int) (gameManager.TimeToChangeGame - gameManager.OriginalTime);
         txtTimeToChange.text = timeToChange.ToString();
 
+        if(gameOverScreen.activeInHierarchy)
+        {
+            return;
+        }
+
         elapsedTime += Time.deltaTime;
         timeLeft = (int)(limitTime - elapsedTime);
         txtTimeLeft.text = timeLeft.ToString();
 
         if (timeLeft == 0)
         {
-            Time.timeScale = 0f;
+            GameManager.instance.StopGame();
             gameOverScreen.SetActive(true);
         }
     }

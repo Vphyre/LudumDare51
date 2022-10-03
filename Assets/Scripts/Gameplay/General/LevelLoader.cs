@@ -15,7 +15,6 @@ public class LevelLoader : MonoBehaviour
         stagesAmount = stages.Length;
         currentSceneName = SceneManager.GetActiveScene().name;
         LoadLevel();
-        Time.timeScale = 1f;
     }
 
     public void NextStage()

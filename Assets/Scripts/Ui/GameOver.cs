@@ -27,6 +27,7 @@ public class GameOver : MonoBehaviour
 
     public void TryAgain()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(currentLevelName);
     }
 

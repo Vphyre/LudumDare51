@@ -14,6 +14,15 @@ public class MirrorController : MonoBehaviour
     private int indexTranform;
     private LightBeamController lightIn;
     private ColorEnum currentColorIn;
+
+    private void OnEnable()
+    {
+
+    }
+    private void OnDisable()
+    {
+  
+    }
     private void Awake()
     {
         indexTranform = 0;
@@ -83,7 +92,10 @@ public class MirrorController : MonoBehaviour
             lightBeamController.CurrentColor._Color = lightIn.CurrentColor._Color;
             lightBeamController.UpdateColor();
         }
-
     }
+    // private void DisableBehaviour()
+    // {
+    //     this.enabled = false;
+    // }
 }
 

@@ -16,6 +16,7 @@ MonoBehaviour:
   - Nemesis
   - Lys
   - Nemesis
+  - Nemesis
   listDialogTexts:
   - Are you still fighting? Now that I have my full power, this pitiful world is
     going to be destroyed and recreated as my new domain. The chaos will consume
@@ -23,7 +24,10 @@ MonoBehaviour:
   - 'Do you really think I''m going to give up? I have a world to save and a bad
     guy to beat. I''ll stop you once and for all, this time. '
   - 'Now, little kid, it''s time for your demise. PREPARE TO BE VANISHED. '
+  - You won't be able to hit with the correct colors my last FOUR, and most powerful
+    portals!
   listCharacterImgs:
   - {fileID: 21300000, guid: d7c3f66a7b8bac14abe4058b7f07dec8, type: 3}
   - {fileID: 21300000, guid: 4adbf1c0d38d97645b240b13f558bdc4, type: 3}
   - {fileID: 21300000, guid: 388c6c6154d09ed4a938a1c3c9f2cff0, type: 3}
+  - {fileID: 21300000, guid: 4c6a9eb838149bc48bd7c479ed26d8ee, type: 3}

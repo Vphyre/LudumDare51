@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aadd4ff95219a94c88639e737b3e2d4, type: 3}
+  m_Name: BossBattleData
+  m_EditorClassIdentifier: 
+  listCharacterNames:
+  - Nemesis
+  - Lys
+  - Nemesis
+  listDialogTexts:
+  - Are you still fighting? Now that I have my full power, this pitiful world is
+    going to be destroyed and recreated as my new domain. The chaos will consume
+    everything.
+  - 'Do you really think I''m going to give up? I have a world to save and a bad
+    guy to beat. I''ll stop you once and for all, this time. '
+  - 'Now, little kid, it''s time for your demise. PREPARE TO BE VANISHED. '
+  listCharacterImgs:
+  - {fileID: 21300000, guid: d7c3f66a7b8bac14abe4058b7f07dec8, type: 3}
+  - {fileID: 21300000, guid: 4adbf1c0d38d97645b240b13f558bdc4, type: 3}
+  - {fileID: 21300000, guid: 388c6c6154d09ed4a938a1c3c9f2cff0, type: 3}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aadd4ff95219a94c88639e737b3e2d4, type: 3}
+  m_Name: LevelSixData
+  m_EditorClassIdentifier: 
+  listCharacterNames:
+  - Nemesis
+  - Lys
+  - Nemesis
+  listDialogTexts:
+  - Hahaha, getting weak already?
+  - Nope! Got much light left here yet.
+  - Oh, but I'm getting stronger stronger. Let's see how you handle things now.
+  listCharacterImgs:
+  - {fileID: 21300000, guid: e10424bb9a9d79849b4931f51b23966f, type: 3}
+  - {fileID: 21300000, guid: 4adbf1c0d38d97645b240b13f558bdc4, type: 3}
+  - {fileID: 21300000, guid: d7c3f66a7b8bac14abe4058b7f07dec8, type: 3}

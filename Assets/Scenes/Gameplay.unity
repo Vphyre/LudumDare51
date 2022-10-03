@@ -253,6 +253,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 347476029543512127, guid: 6c3a5b75aa1018d48aa9b0175b16771f, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 347476030272560473, guid: 6c3a5b75aa1018d48aa9b0175b16771f, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -3
@@ -404,6 +408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2212613120727449550, guid: a067ae696373d064c87088bafa82444b, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2212613121346721873, guid: a067ae696373d064c87088bafa82444b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -504,6 +512,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7629518724086572298, guid: eab093bdec883f841a447217efaebe20, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7629518724086572300, guid: eab093bdec883f841a447217efaebe20, type: 3}
+      propertyPath: m_ScreenMatchMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7629518724086572301, guid: eab093bdec883f841a447217efaebe20, type: 3}

@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1180712b6c266a04c84b7cfa326577f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingScene: Prologue
+  startingScene: HowToPlay
   credits: Credits
 --- !u!4 &2031397734
 Transform:

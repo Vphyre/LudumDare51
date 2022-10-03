@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu]
 public class GameData : ScriptableObject
 {
-    public int stage;
+    public int currentStage = 1;
 }

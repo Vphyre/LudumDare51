@@ -5,25 +5,28 @@ using UnityEngine.UI;
 
 public class ScriptDialog : MonoBehaviour
 {
+    [SerializeField] private Canvas canvas;
     public DialogData dialogData;
 
-    Text characterName;
-    Text dialogText;
-    Image characterImg;
+    public Text characterName;
+    public Text dialogText;
+    public Image characterImg;
     int curIndexDialog = 0;
-
-    // Start is called before the first frame update
+    private void Start()
+    {
+        canvas.worldCamera = Camera.main;    
+    }
     void OnEnable()
     {
         Time.timeScale = 0f;
 
-        characterName = GameObject.Find("CharacterName").GetComponent<Text>();
+        // characterName = GameObject.Find("CharacterName").GetComponent<Text>();
         characterName.text = dialogData.listCharacterNames[curIndexDialog];
 
-        dialogText = GameObject.Find("TextDialog").GetComponent<Text>();
+        // dialogText = GameObject.Find("TextDialog").GetComponent<Text>();
         dialogText.text = dialogData.listDialogTexts[curIndexDialog];
 
-        characterImg = GameObject.Find("CharacterImg").GetComponent<Image>();
+        // characterImg = GameObject.Find("CharacterImg").GetComponent<Image>();
         characterImg.sprite = dialogData.listCharacterImgs[curIndexDialog];
     }
 
@@ -39,13 +42,13 @@ public class ScriptDialog : MonoBehaviour
 
         if (curIndexDialog < dialogData.listDialogTexts.Count)
         {
-            characterName = GameObject.Find("CharacterName").GetComponent<Text>();
+            // characterName = GameObject.Find("CharacterName").GetComponent<Text>();
             characterName.text = dialogData.listCharacterNames[curIndexDialog];
 
-            dialogText = GameObject.Find("TextDialog").GetComponent<Text>();
+            // dialogText = GameObject.Find("TextDialog").GetComponent<Text>();
             dialogText.text = dialogData.listDialogTexts[curIndexDialog];
 
-            characterImg = GameObject.Find("CharacterImg").GetComponent<Image>();
+            // characterImg = GameObject.Find("CharacterImg").GetComponent<Image>();
             characterImg.sprite = dialogData.listCharacterImgs[curIndexDialog];
         }
         else

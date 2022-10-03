@@ -18,17 +18,17 @@ public class PortalController : MonoBehaviour
     private void Awake()
     {
         currentColor = GetComponent<ColorController>();
-        colorIndicatorSprite = GetComponent<SpriteRenderer>();
+        // colorIndicatorSprite = GetComponent<SpriteRenderer>();
         colorIndicatorSprite.color = currentColor.GetColor();
 
         if (canChangeColor)
         {
             GameManager.onChangeTime += ChangeColor;
         }
-        if (canTeleport)
-        {
-            GameManager.onChangeTime += ChangePosition;
-        }
+        // if (canTeleport)
+        // {
+        //     GameManager.onChangeTime += ChangePosition;
+        // }
     }
     private void OnDisable()
     {
@@ -36,10 +36,10 @@ public class PortalController : MonoBehaviour
         {
             GameManager.onChangeTime -= ChangeColor;
         }
-        if (canTeleport)
-        {
-            GameManager.onChangeTime -= ChangePosition;
-        }
+        // if (canTeleport)
+        // {
+        //     GameManager.onChangeTime -= ChangePosition;
+        // }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -56,7 +56,6 @@ public class PortalController : MonoBehaviour
             checkingColor = false;
         }
     }
-
     void Update()
     {
         if (checkingColor)
@@ -71,6 +70,10 @@ public class PortalController : MonoBehaviour
     }
     private void ChangePosition()
     {
+        if(!canTeleport)
+        {
+            return;
+        }
         this.transform.position = portalPositions[indexTranform].position;
 
         indexTranform++;
@@ -86,6 +89,7 @@ public class PortalController : MonoBehaviour
         {
             healthPoints--;
             ChangeColor();
+            ChangePosition();
             VerifyEndGame();
         }
     }
@@ -94,6 +98,7 @@ public class PortalController : MonoBehaviour
         if (healthPoints <= 0)
         {
             Debug.Log("Terminou a fase");
+            GameManager.instance.NextStage();
         }
     }
 }

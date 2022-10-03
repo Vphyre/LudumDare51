@@ -27,6 +27,7 @@ public class MirrorController : MonoBehaviour
         if (other.gameObject.tag == "LightPoint" && other != skippableCollider)
         {
             // other.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            Debug.Log("Colidiu");
             currentColorIn = other.gameObject.GetComponent<LightMove>().LightBeamController.CurrentColor._Color;
             lightIn = other.gameObject.GetComponent<LightMove>().LightBeamController;
             LightBeamTurnOn();
@@ -63,6 +64,7 @@ public class MirrorController : MonoBehaviour
     public void LightBeamTurnOn()
     {
         lightBeamController.gameObject.transform.parent.transform.gameObject.SetActive(true);
+        SetDestination();
     }
     public void LightBeamTurnOff()
     {

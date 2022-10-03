@@ -15,7 +15,7 @@ public class PauseMenu : MonoBehaviour
 
     void OnEnable()
     {
-        Time.timeScale = 0f;
+        // Time.timeScale = 0f;
     }
 
     // Update is called once per frame

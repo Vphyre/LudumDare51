@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     [SerializeField] private float timeToChangeGame;
+    [SerializeField] private LevelLoader levelLoader;
     public float TimeToChangeGame { get => timeToChangeGame; }
     private float originalTime;
     public float OriginalTime { get => originalTime; }
@@ -20,11 +21,16 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         originalTime += Time.deltaTime;
+        
         if (originalTime >= timeToChangeGame)
         {
             originalTime = 0;
             Debug.Log("Restou cores");
             onChangeTime?.Invoke();
         }
+    }
+    public void NextStage()
+    {
+        levelLoader.NextStage();
     }
 }
